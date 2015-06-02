@@ -1,0 +1,378 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>55留学网站二级</title>
+  <link href="/css/55lx_Style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="headerBar">
+  <div id="header"> <a href="index.ht" class="logo">55留学网</a>
+      <div id="navBar" class="black">
+          <a href="/first">首页</a>
+          <% cou_co.forEach(function(cou,index) {%>
+          <% if(cou.get('name')=='澳洲版块'){ %><a href="/channel_2ji/<%= cou.id %>"<%if(cou_co_current.id == cou.id){%> class="dq"<%}%>>澳洲本科/研究生</a> <% } %>
+          <% if(cou.get('name')=='英国版块'){ %><a href="/channel_2ji/<%= cou.id %>"<%if(cou_co_current.id == cou.id){%> class="dq"<%}%>>英国本科/研究生</a> <% } %>
+          <% if(cou.get('name')=='新西兰版块'){ %><a href="/channel_2ji/<%= cou.id %>"<%if(cou_co_current.id == cou.id){%> class="dq"<%}%>>新西兰本科/研究生</a> <% } %>
+          <% if(cou.get('name')=='雅思版块'){ %><a href="/channel_2ji/<%= cou.id %>"<%if(cou_co_current.id == cou.id){%> class="dq"<%}%>>雅思强化</a> <% } %>
+          <%}); %>
+          <a href="#">关于我们</a>
+      </div>
+    <!--<div id="navBar" class="black">
+      <a href="#">首页</a>
+      <a href="#" class="dq">澳洲本科/研究生</a>
+      <a href="#">英国本科/研究生</a>
+      <a href="#">新西兰本科/研究生</a>
+      <a href="#">雅思强化</a>
+      <a href="#">关于我们</a>
+    </div>-->
+  </div>
+</div>
+<div class="focusBarBg">
+  <div class="flashBox"> <a href="javascript:void(0);" class="arrBtL" onclick="prePage('')">&nbsp;</a> <a href="javascript:void(0);" class="arrBtR " onclick="nextPage('')">&nbsp;</a>
+      <% flash.forEach(function(flash,index) {%>
+      <div id="flash<%= index+1 %>" class="pic" <% if(index==0){ %>style="display: block;" <% } %>>
+          <a href="#" target="_blank">
+              <img src="<%= flash.get('img') %>" alt=""/>
+          </a>
+      </div>
+      <%}); %>
+      <div class="flashNum"> <span class="on" id="f1" onclick="changeflash(1)"></span> <span  id="f2" onclick="changeflash(2)"></span> <span  id="f3" onclick="changeflash(3)"></span> </div>
+  </div>
+</div>
+<div class="wrap">
+  <div class="hr10"></div>
+  <div class="contentL">
+    <div class="listBoxS fl">
+      <div class="colTit"><span class="fr gray"><a href="#" target="_blank">更多&gt;&gt;</a></span><span class="tit black">申请必读</span></div>
+      <div class="listBoxS_top">
+        <div class="picTit"><a href="#" target="_blank"><img src="/images/temp/pic_2.jpg"></a></div>
+        <div class="txt">
+          <h2 class="orange"><a href="#" target="_blank">[考试动态]标题标题</a></h2>
+          感谢您对55留学网的支持，您的问题回答如下感谢您对55留学网的支持，您的问题回答如下</div>
+      </div>
+      <ul class="list">
+        <li><span class="fr gray">2015-2-14</span><span class="icoLi icoLi_4">&nbsp;</span><a href="#" target="_blank">清单下载：澳洲留学本硕申请材料清单</a></li>
+        <li><span class="fr gray">2015-2-14</span><span class="icoLi icoLi_4">&nbsp;</span><a href="#" target="_blank">为什么55留学网零中介费申请澳洲留学？</a></li>
+        <li><span class="fr gray">2015-2-14</span><span class="icoLi icoLi_4">&nbsp;</span><a href="#" target="_blank">清单下载：澳洲留学本硕申请材料清单</a></li>
+        <li><span class="fr gray">2015-2-14</span><span class="icoLi icoLi_4">&nbsp;</span><a href="#" target="_blank">为什么55留学网零中介费申请澳洲留学？</a></li>
+        <li><span class="fr gray">2015-2-14</span><span class="icoLi icoLi_4">&nbsp;</span><a href="#" target="_blank">清单下载：澳洲留学本硕申请材料清单</a></li>
+      </ul>
+    </div>
+    <div class="listBoxS fr">
+      <div class="colTit"><span class="fr gray"><a href="#" target="_blank">更多&gt;&gt;</a></span><span class="tit black">申请流程</span></div>
+      <div class="listBoxS_top">
+        <div class="picTit"><a href="#" target="_blank"><img src="/images/temp/pic_2.jpg"></a></div>
+        <div class="txt">
+          <h2 class="blue"><a href="#" target="_blank">[考试动态]标题标题</a></h2>
+          感谢您对55留学网的支持，您的问题回答如下感谢您对55留学网的支持，您的问题回答如下</div>
+      </div>
+      <ul class="list">
+        <li><span class="fr gray">2015-2-14</span><span class="icoLi icoLi_4">&nbsp;</span><a href="#" target="_blank">清单下载：澳洲留学本硕申请材料清单</a></li>
+        <li><span class="fr gray">2015-2-14</span><span class="icoLi icoLi_4">&nbsp;</span><a href="#" target="_blank">为什么55留学网零中介费申请澳洲留学？</a></li>
+        <li><span class="fr gray">2015-2-14</span><span class="icoLi icoLi_4">&nbsp;</span><a href="#" target="_blank">清单下载：澳洲留学本硕申请材料清单</a></li>
+        <li><span class="fr gray">2015-2-14</span><span class="icoLi icoLi_4">&nbsp;</span><a href="#" target="_blank">为什么55留学网零中介费申请澳洲留学？</a></li>
+        <li><span class="fr gray">2015-2-14</span><span class="icoLi icoLi_4">&nbsp;</span><a href="#" target="_blank">清单下载：澳洲留学本硕申请材料清单</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="colBox_C">
+    <div class="colTit"><span class="tit black">顾问咨询</span></div>
+    <ul class="sideRgwZxList">
+      <li>
+        <div class="pic black"><a href="#" target="_blank"><img src="/images/temp/pic_3.jpg"></a>Echo</div>
+        <div class="txt"><a href="#" class="zixunBt">&nbsp;</a>
+          <p>留学顾问Echo，3年澳洲留学经留学经验，擅长澳洲硕士...</p>
+        </div>
+        <div class="cl"></div>
+      </li>
+    </ul>
+    <div class="hr10"></div>
+    <div class="ziliaoList">
+      <ul class="black">
+        <li>
+          <div class="pic"><span class="ico"></span><a href="#" target="_blank"><img src="/images/temp/pic_4.jpg"></a></div>
+          <a href="#" target="_blank">申请资料下载</a></li>
+        <li>
+          <div class="pic"><span class="ico"></span><a href="#" target="_blank"><img src="/images/temp/pic_4.jpg"></a></div>
+          <a href="#" target="_blank">申请资料下载</a></li>
+        <div class="cl"></div>
+      </ul>
+      <a href="#" class="moreBt white fr">更多资料下载&gt;&gt;</a>
+      <div class="hr10"></div>
+    </div>
+  </div>
+  <div class="hr10"></div>
+  <div class="colTit"><span class="fr gray"><a href="#" target="_blank">更多&gt;&gt;</a></span><span class="tit black">澳洲院校</span></div>
+  <ul class="yuanxiaoList white">
+    <li id="tab_1"><span class="tit" style="display:block;">悉尼大学1</span><img src="/images/temp/pic_6.jpg" /><span class="yuanxiaoTab" style="display:block;">&nbsp;</span></li>
+    <li id="tab_2"><span class="tit">悉尼大学2</span><img src="/images/temp/pic_6.jpg" /><span class="yuanxiaoTab">&nbsp;</span></li>
+    <li id="tab_3"><span class="tit">悉尼大学3</span><img src="/images/temp/pic_6.jpg" /><span class="yuanxiaoTab">&nbsp;</span></li>
+    <li id="tab_4"><span class="tit">悉尼大学4</span><img src="/images/temp/pic_6.jpg" /><span class="yuanxiaoTab">&nbsp;</span></li>
+    <li id="tab_5"><span class="tit">悉尼大学5</span><img src="/images/temp/pic_6.jpg" /><span class="yuanxiaoTab">&nbsp;</span></li>
+    <li id="tab_6"><span class="tit">悉尼大学6</span><img src="/images/temp/pic_6.jpg" /><span class="yuanxiaoTab">&nbsp;</span></li>
+    <li id="tab_7"><span class="tit">悉尼大学7</span><img src="/images/temp/pic_6.jpg" /><span class="yuanxiaoTab">&nbsp;</span></li>
+    <li id="tab_8"><span class="tit">悉尼大学8</span><img src="/images/temp/pic_6.jpg" /><span class="yuanxiaoTab">&nbsp;</span></li>
+    <li id="tab_9"><span class="tit">悉尼大学9</span><img src="/images/temp/pic_6.jpg" /><span class="yuanxiaoTab">&nbsp;</span></li>
+    <li id="tab_10"><span class="tit">悉尼大学10</span><img src="/images/temp/pic_6.jpg" /><span class="yuanxiaoTab">&nbsp;</span></li>
+    <div class="cl"></div>
+  </ul>
+  <div class="yuanxiaoCon">
+    <div id="tab_1Con" class="tab_Con">
+      <div class="con">
+        <p>悉尼大学是全澳和整个大洋洲第一所大学，是澳大利亚八大名校的成员，在澳大利亚被归为6所砂岩学府之一，同时还是环太平洋大学联盟与亚太国际贸易教育暨研究联盟的成员。<br>
+          盟与亚太国际贸易教盟的成员。</p>
+        <p>绝对优势：研究型强校；位置优越，就业机会多</p>
+        <p>2013   QS世界大学综合排名   第38位</p>
+      </div>
+      <div class="fr white"><a href="#" class="tyButton mar_r10">我要申请</a><a href="#" class="tyButton mar_r10">大学排名</a><a href="#" class="tyButton">热门专业</a></div>
+    </div>
+    <div id="tab_2Con" class="tab_Con" style="display:none">
+      <div class="con">
+        <p>2222悉尼大学是全澳和整个大洋洲第一所大学，是澳大利亚八大名校的成员，在澳大利亚被归为6所砂岩学府之一，同时还是环太平洋大学联盟与亚太国际贸易教育暨研究联盟的成员。<br>
+          盟与亚太国际贸易教盟的成员。</p>
+        <p>绝对优势：研究型强校；位置优越，就业机会多</p>
+        <p>2013   QS世界大学综合排名   第38位</p>
+      </div>
+      <div class="fr white"><a href="#" class="tyButton mar_r10">我要申请</a><a href="#" class="tyButton mar_r10">大学排名</a><a href="#" class="tyButton">热门专业</a></div>
+    </div>
+    <div id="tab_3Con" class="tab_Con" style="display:none">
+      <div class="con">
+        <p>3333悉尼大学是全澳和整个大洋洲第一所大学，是澳大利亚八大名校的成员，在澳大利亚被归为6所砂岩学府之一，同时还是环太平洋大学联盟与亚太国际贸易教育暨研究联盟的成员。<br>
+          盟与亚太国际贸易教盟的成员。</p>
+        <p>绝对优势：研究型强校；位置优越，就业机会多</p>
+        <p>2013   QS世界大学综合排名   第38位</p>
+      </div>
+      <div class="fr white"><a href="#" class="tyButton mar_r10">我要申请</a><a href="#" class="tyButton mar_r10">大学排名</a><a href="#" class="tyButton">热门专业</a></div>
+    </div>
+    <div id="tab_4Con" class="tab_Con" style="display:none">
+      <div class="con">
+        <p>4444444444悉尼大学是全澳和整个大洋洲第一所大学，是澳大利亚八大名校的成员，在澳大利亚被归为6所砂岩学府之一，同时还是环太平洋大学联盟与亚太国际贸易教育暨研究联盟的成员。<br>
+          盟与亚太国际贸易教盟的成员。</p>
+        <p>绝对优势：研究型强校；位置优越，就业机会多</p>
+        <p>2013   QS世界大学综合排名   第38位</p>
+      </div>
+      <div class="fr white"><a href="#" class="tyButton mar_r10">我要申请</a><a href="#" class="tyButton mar_r10">大学排名</a><a href="#" class="tyButton">热门专业</a></div>
+    </div>
+    <div id="tab_5Con" class="tab_Con" style="display:none">
+      <div class="con">
+        <p>5555555悉尼大学是全澳和整个大洋洲第一所大学，是澳大利亚八大名校的成员，在澳大利亚被归为6所砂岩学府之一，同时还是环太平洋大学联盟与亚太国际贸易教育暨研究联盟的成员。<br>
+          盟与亚太国际贸易教盟的成员。</p>
+        <p>绝对优势：研究型强校；位置优越，就业机会多</p>
+        <p>2013   QS世界大学综合排名   第38位</p>
+      </div>
+      <div class="fr white"><a href="#" class="tyButton mar_r10">我要申请</a><a href="#" class="tyButton mar_r10">大学排名</a><a href="#" class="tyButton">热门专业</a></div>
+    </div>
+    <div id="tab_6Con" class="tab_Con" style="display:none">
+      <div class="con">
+        <p>666666悉尼大学是全澳和整个大洋洲第一所大学，是澳大利亚八大名校的成员，在澳大利亚被归为6所砂岩学府之一，同时还是环太平洋大学联盟与亚太国际贸易教育暨研究联盟的成员。<br>
+          盟与亚太国际贸易教盟的成员。</p>
+        <p>绝对优势：研究型强校；位置优越，就业机会多</p>
+        <p>2013   QS世界大学综合排名   第38位</p>
+      </div>
+      <div class="fr white"><a href="#" class="tyButton mar_r10">我要申请</a><a href="#" class="tyButton mar_r10">大学排名</a><a href="#" class="tyButton">热门专业</a></div>
+    </div>
+    <div id="tab_7Con" class="tab_Con" style="display:none">
+      <div class="con">
+        <p>777777悉尼大学是全澳和整个大洋洲第一所大学，是澳大利亚八大名校的成员，在澳大利亚被归为6所砂岩学府之一，同时还是环太平洋大学联盟与亚太国际贸易教育暨研究联盟的成员。<br>
+          盟与亚太国际贸易教盟的成员。</p>
+        <p>绝对优势：研究型强校；位置优越，就业机会多</p>
+        <p>2013   QS世界大学综合排名   第38位</p>
+      </div>
+      <div class="fr white"><a href="#" class="tyButton mar_r10">我要申请</a><a href="#" class="tyButton mar_r10">大学排名</a><a href="#" class="tyButton">热门专业</a></div>
+    </div>
+    <div id="tab_8Con" class="tab_Con" style="display:none">
+      <div class="con">
+        <p>888888888悉尼大学是全澳和整个大洋洲第一所大学，是澳大利亚八大名校的成员，在澳大利亚被归为6所砂岩学府之一，同时还是环太平洋大学联盟与亚太国际贸易教育暨研究联盟的成员。<br>
+          盟与亚太国际贸易教盟的成员。</p>
+        <p>绝对优势：研究型强校；位置优越，就业机会多</p>
+        <p>2013   QS世界大学综合排名   第38位</p>
+      </div>
+      <div class="fr white"><a href="#" class="tyButton mar_r10">我要申请</a><a href="#" class="tyButton mar_r10">大学排名</a><a href="#" class="tyButton">热门专业</a></div>
+    </div>
+    <div id="tab_9Con" class="tab_Con" style="display:none">
+      <div class="con">
+        <p>9999999悉尼大学是全澳和整个大洋洲第一所大学，是澳大利亚八大名校的成员，在澳大利亚被归为6所砂岩学府之一，同时还是环太平洋大学联盟与亚太国际贸易教育暨研究联盟的成员。<br>
+          盟与亚太国际贸易教盟的成员。</p>
+        <p>绝对优势：研究型强校；位置优越，就业机会多</p>
+        <p>2013   QS世界大学综合排名   第38位</p>
+      </div>
+      <div class="fr white"><a href="#" class="tyButton mar_r10">我要申请</a><a href="#" class="tyButton mar_r10">大学排名</a><a href="#" class="tyButton">热门专业</a></div>
+    </div>
+    <div id="tab_10Con" class="tab_Con" style="display:none">
+      <div class="con">
+        <p>1010悉尼大学是全澳和整个大洋洲第一所大学，是澳大利亚八大名校的成员，在澳大利亚被归为6所砂岩学府之一，同时还是环太平洋大学联盟与亚太国际贸易教育暨研究联盟的成员。<br>
+          盟与亚太国际贸易教盟的成员。</p>
+        <p>绝对优势：研究型强校；位置优越，就业机会多</p>
+        <p>2013   QS世界大学综合排名   第38位</p>
+      </div>
+      <div class="fr white"><a href="#" class="tyButton mar_r10">我要申请</a><a href="#" class="tyButton mar_r10">大学排名</a><a href="#" class="tyButton">热门专业</a></div>
+    </div>
+  </div>
+  <div class="hr10"></div>
+  <div class="tlBar"><a href="#" target="_blank"><img src="/images/temp/pic_8.jpg" alt=""></a></div>
+  <div class="hr10"></div>
+  <div class="contentL">
+    <div class="listBoxS fl">
+      <div class="colTit"><span class="fr gray"><a href="#" target="_blank">更多&gt;&gt;</a></span><span class="tit black">澳洲大学和专业排名</span></div>
+      <div class="listBoxS_top">
+        <div class="picTit"><a href="#" target="_blank"><img src="/images/temp/pic_2.jpg"></a></div>
+        <div class="txt">
+          <h2 class="orange"><a href="#" target="_blank">[考试动态]标题标题</a></h2>
+          感谢您对55留学网的支持，您的问题回答如下感谢您对55留学网的支持，您的问题回答如下</div>
+      </div>
+      <ul class="list">
+        <li><span class="fr gray">2015-2-14</span><span class="icoLi icoLi_4">&nbsp;</span><a href="#" target="_blank">清单下载：澳洲留学本硕申请材料清单</a></li>
+        <li><span class="fr gray">2015-2-14</span><span class="icoLi icoLi_4">&nbsp;</span><a href="#" target="_blank">为什么55留学网零中介费申请澳洲留学？</a></li>
+        <li><span class="fr gray">2015-2-14</span><span class="icoLi icoLi_4">&nbsp;</span><a href="#" target="_blank">清单下载：澳洲留学本硕申请材料清单</a></li>
+        <li><span class="fr gray">2015-2-14</span><span class="icoLi icoLi_4">&nbsp;</span><a href="#" target="_blank">为什么55留学网零中介费申请澳洲留学？</a></li>
+        <li><span class="fr gray">2015-2-14</span><span class="icoLi icoLi_4">&nbsp;</span><a href="#" target="_blank">清单下载：澳洲留学本硕申请材料清单</a></li>
+      </ul>
+    </div>
+    <div class="listBoxS fr">
+      <div class="colTit"><span class="fr gray"><a href="#" target="_blank">更多&gt;&gt;</a></span><span class="tit black">澳洲留学专业查询</span></div>
+      <div class="zhuanyeCX"><a href="#" class="zyTop zyBg_1">去读商科本科/硕士<br>
+          <span class="font12">（最全澳洲商科课程集合）</span></a><a href="#" class="zyTop zyBg_2">去读工科本科/硕士<br>
+          <span class="font12">（最全澳洲工科课程集合）</span></a><a href="#" target="_blank" class="zyName zyBg_3">动漫</a><a href="#" target="_blank" class="zyName zyBg_4">艺术/设计</a><a href="#" target="_blank" class="zyName zyBg_5">IT/计算机</a><a href="#" target="_blank" class="zyName zyBg_6">心理学/护理/医学院</a><a href="#" target="_blank" class="zyName zyBg_3">热门/移民专业</a><a href="#" target="_blank" class="zyName zyBg_2">传媒/教师</a><a href="#" target="_blank" class="zyName zyBg_7">选什么好？获取建议！</a></div>
+      <div class="tc"><a href="#" target="_blank"><img src="/images/lxzixun.jpg" width="445" height="140" alt=""/></a></div>
+    </div>
+  </div>
+  <div class="colBox_C">
+    <div class="colTit"><span class="fr gray"><a href="#" target="_blank">更多&gt;&gt;</a></span><span class="tit black">成功案例</span></div>
+    <div class="hr10"></div>
+    <ul class="sideRanliList">
+      <li><a href="#" target="_blank"><img src="/images/temp/pic_4.jpg"></a> <a href="#" target="_blank">#非211申请悉尼大学</a></li>
+      <li><a href="#" target="_blank"><img src="/images/temp/pic_4.jpg"></a> <a href="#" target="_blank">#非211申请悉尼大学</a></li>
+      <li><a href="#" target="_blank"><img src="/images/temp/pic_4.jpg"></a> <a href="#" target="_blank">#非211申请悉尼大学</a></li>
+      <li><a href="#" target="_blank"><img src="/images/temp/pic_4.jpg"></a> <a href="#" target="_blank">#非211申请悉尼大学</a></li>
+      <div class="cl"></div>
+    </ul>
+  </div>
+  <div class="hr10"></div>
+  <div class="contentL">
+    <div class="listBoxS fl">
+      <div class="colTit"><span class="fr gray"><a href="#" target="_blank">更多&gt;&gt;</a></span><span class="tit black">写作练习及范文</span></div>
+      <div class="listBoxS_top">
+        <div class="picTit"><a href="#" target="_blank"><img src="/images/temp/pic_2.jpg"></a></div>
+        <div class="txt">
+          <h2 class="orange"><a href="#" target="_blank">[考试动态]标题标题</a></h2>
+          感谢您对55留学网的支持，您的问题回答如下感谢您对55留学网的支持，您的问题回答如下</div>
+      </div>
+      <ul class="list">
+        <li><span class="fr gray">2015-2-14</span><span class="icoLi icoLi_4">&nbsp;</span><a href="#" target="_blank">清单下载：澳洲留学本硕申请材料清单</a></li>
+        <li><span class="fr gray">2015-2-14</span><span class="icoLi icoLi_4">&nbsp;</span><a href="#" target="_blank">为什么55留学网零中介费申请澳洲留学？</a></li>
+        <li><span class="fr gray">2015-2-14</span><span class="icoLi icoLi_4">&nbsp;</span><a href="#" target="_blank">清单下载：澳洲留学本硕申请材料清单</a></li>
+        <li><span class="fr gray">2015-2-14</span><span class="icoLi icoLi_4">&nbsp;</span><a href="#" target="_blank">为什么55留学网零中介费申请澳洲留学？</a></li>
+        <li><span class="fr gray">2015-2-14</span><span class="icoLi icoLi_4">&nbsp;</span><a href="#" target="_blank">清单下载：澳洲留学本硕申请材料清单</a></li>
+      </ul>
+    </div>
+    <div class="listBoxS fr">
+      <div class="colTit"><span class="fr gray"><a href="#" target="_blank">更多&gt;&gt;</a></span><span class="tit black">阅读练习及范文</span></div>
+      <div class="listBoxS_top">
+        <div class="picTit"><a href="#" target="_blank"><img src="/images/temp/pic_2.jpg"></a></div>
+        <div class="txt">
+          <h2 class="blue"><a href="#" target="_blank">[考试动态]标题标题</a></h2>
+          感谢您对55留学网的支持，您的问题回答如下感谢您对55留学网的支持，您的问题回答如下</div>
+      </div>
+      <ul class="list">
+        <li><span class="fr gray">2015-2-14</span><span class="icoLi icoLi_4">&nbsp;</span><a href="#" target="_blank">清单下载：澳洲留学本硕申请材料清单</a></li>
+        <li><span class="fr gray">2015-2-14</span><span class="icoLi icoLi_4">&nbsp;</span><a href="#" target="_blank">为什么55留学网零中介费申请澳洲留学？</a></li>
+        <li><span class="fr gray">2015-2-14</span><span class="icoLi icoLi_4">&nbsp;</span><a href="#" target="_blank">清单下载：澳洲留学本硕申请材料清单</a></li>
+        <li><span class="fr gray">2015-2-14</span><span class="icoLi icoLi_4">&nbsp;</span><a href="#" target="_blank">为什么55留学网零中介费申请澳洲留学？</a></li>
+        <li><span class="fr gray">2015-2-14</span><span class="icoLi icoLi_4">&nbsp;</span><a href="#" target="_blank">清单下载：澳洲留学本硕申请材料清单</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="colBox_C">
+    <div class="colTit"><span class="fr gray"><a href="#" target="_blank">更多&gt;&gt;</a></span><span class="tit black">申请材料和模版</span></div>
+    <div class="hr20"></div>
+    <ul class="ziliaoList black">
+      <li>
+        <div class="pic"><span class="ico"></span><a href="#" target="_blank"><img src="/images/temp/pic_4.jpg"></a></div>
+        <a href="#" target="_blank">申请资料下载</a></li>
+      <li>
+        <div class="pic"><span class="ico"></span><a href="#" target="_blank"><img src="/images/temp/pic_4.jpg"></a></div>
+        <a href="#" target="_blank">申请资料下载</a></li>
+      <li>
+        <div class="pic"><span class="ico"></span><a href="#" target="_blank"><img src="/images/temp/pic_4.jpg"></a></div>
+        <a href="#" target="_blank">申请资料下载</a></li>
+      <li>
+        <div class="pic"><span class="ico"></span><a href="#" target="_blank"><img src="/images/temp/pic_4.jpg"></a></div>
+        <a href="#" target="_blank">申请资料下载</a></li>
+      <div class="cl"></div>
+    </ul>
+  </div>
+  <div class="cl"></div>
+</div>
+<div id="footer" class="white">Archiver|手机版|小黑屋| 55留学网 ( 京ICP备13011068号-2 )站长统计<br>
+  GMT+8, 2015-4-15 13:45 , Processed in 0.106113 second(s), 13 queries .</div>
+<script src="/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script>
+  var currentindex=1;
+  var countFocus=3;
+  var currentFocus=1;
+  function changeflash(i) {
+    currentFocus=i;
+    currentindex=i;
+    for (j=1;j<=countFocus;j++){
+      if (j==i)
+      {$("#flash"+j).fadeIn("normal");
+        $("#flash"+j).css("display","block");
+        $("#f"+j).removeClass();
+        $("#f"+j).addClass("on");
+      }
+      else
+      {$("#flash"+j).css("display","none");
+        $("#f"+j).removeClass();
+      }
+    }}
+  function startAm(){
+    timerID = setInterval("timer_tick()",7000);
+  }
+  function stopAm(){
+    clearInterval(timerID);
+  }
+  function timer_tick() {
+    currentindex=currentindex>=countFocus?1:currentindex+1;
+    changeflash(currentindex);}
+
+  function timer_tickF() {
+    currentFocus=currentFocus>=countFocus?1:currentFocus+1;
+    changeflash(currentFocus);}
+
+  $(document).ready(function(){
+    $(".flashNum span").mouseover(function(){stopAm();}).mouseout(function(){startAm();});
+    startAm();
+  });
+
+  function nextPage() {
+    pageI = Number(currentFocus);
+    if (pageI==countFocus)
+    {i=1;}
+    else
+    {i=pageI+1;}
+    changeflash(i)
+  }
+  function prePage() {
+    pageI = Number(currentFocus);
+    if (pageI==1)
+    {i=countFocus;}
+    else
+    {i=pageI-1;}
+    changeflash(i)
+  }
+
+  $(".yuanxiaoList li").hover(
+          function () {
+            $(".yuanxiaoList li span").css("display","none");
+            $(".tab_Con").hide();
+            $(this).find("span").css("display","block");
+            $("#"+$(this).attr("id")+"Con").show();
+          },
+          function () {
+            // $(this).find("span").css("display","block");
+          }
+  );
+</script>
+</body>
+</html>

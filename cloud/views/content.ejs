@@ -1,0 +1,282 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>55留学网站文章内容页</title>
+    <link href="/css/55lx_Style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+<div class="headerBar">
+    <div id="header"><a href="index.ht" class="logo">55留学网</a>
+
+        <div id="navBar" class="black"><a href="#">首页</a><a href="#">澳洲本科/研究生</a><a href="#">英国本科/研究生</a><a href="#">新西兰本科/研究生</a><a
+                    href="#">雅思强化</a><a href="#">关于我们</a></div>
+    </div>
+</div>
+<div class="wrap">
+    <div class="tlBar"><a href="#" target="_blank"><img src="<%= ad_co.get('img') %>" width="1280" height="160" alt=""/></a>
+    </div>
+    <div class="currentBar">
+        <div class="fl">您所在的位置 &gt; <a href="/first">首页</a> &gt; <a href="#">澳洲本科/研究生</a> &gt; <a href="#">申请必读</a> &gt;
+            <span class="black">文章标题</span></div>
+    </div>
+    <div class="cl"></div>
+    <div class="contentL">
+        <h1><%= ar_cu.get('title') %></h1>
+
+        <div class="authorBar gray">
+            <div class="ar_cu_id" style="display: none;"><%= ar_cu.id %></div>
+            <div class="fl tr">
+                日期：<%= new Date(ar_cu.createdAt).toLocaleDateString() %> 　　作者：<%= ar_cu.get('author') %>   &nbsp;&nbsp;&nbsp;&nbsp;   <span class="icoZan">  赞一下 <%= ar_cu.get('praise') %></span>
+            </div>
+            <div class="share1" id="share"><span class="shareTop">&nbsp;</span><a href="#">腾讯微博</a><a
+                        href="#">QQ空间</a><a href="#">QQ好友</a><a href="#">新浪微博</a><a href="#">微信好友</a></div>
+        </div>
+        <div class="content">
+            <div class="ar_content"><%= ar_cu.get('content') %></div>
+            <div class="conPageBar">
+                <!--<div class="conPages"><span>上一页</span><span>1</span><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">下一页</a></div>-->
+                <div class="share2"><a href="javascript:void(0)" class="s0">分享到: &nbsp;</a><a href="#"
+                                                                                              class="s1">腾讯微博</a><a
+                            href="#" class="s2">QQ空间</a><a href="#" class="s3">QQ好友</a><a href="#" class="s4">新浪微博</a><a
+                            href="#" class="s5">微信好友</a></div>
+            </div>
+        </div>
+        <!--<div class="colTit">
+            <div class="rTab"><a href="#">最新</a> 　<a href="#" class="red">最早</a>　<a href="#">最热</a></div>
+            <span class="tit black">相关评论</span></div>
+        <ul class="plList">
+            <li>
+                <div class="pic"><img src="/images/temp/pic_3.jpg"/></div>
+                <div class="txt"><span class="red fb">candy</span><br>
+                    楼主能否留下联系方式！很希望和你聊下的！
+                    <div class="gray plCaozuo"><span class="disIBlock">4月22日</span><a href="#" class="icoP p1">回复</a><a
+                                href="#" class="icoP p2">顶</a><a href="#" class="icoP p3">转发</a></div>
+                </div>
+                <div class="cl"></div>
+            </li>
+            <li>
+                <div class="pic"><img src="/images/temp/pic_3.jpg"/></div>
+                <div class="txt"><span class="red fb">candy</span><br>
+                    楼主能否留下联系方式！很希望和你聊下的！
+                    <div class="gray plCaozuo"><span class="disIBlock">4月22日</span><a href="#" class="icoP p1">回复</a><a
+                                href="#" class="icoP p2">顶</a><a href="#" class="icoP p3">转发</a></div>
+                </div>
+                <div class="cl"></div>
+            </li>
+            <li>
+                <div class="pic"><img src="/images/temp/pic_3.jpg"/></div>
+                <div class="txt"><span class="red fb">candy</span><br>
+                    楼主能否留下联系方式！很希望和你聊下的！楼主能否留下联系方式！很希望和你聊下的！楼主能否留下联系方式！很希望和你聊下的！楼主能否留下联系方式！很希望和你聊下的！楼主能否留下联系方式！很希望和你聊下的！
+                    <div class="gray plCaozuo"><span class="disIBlock">4月22日</span><a href="#" class="icoP p1">回复</a><a
+                                href="#" class="icoP p2">顶</a><a href="#" class="icoP p3">转发</a></div>
+                </div>
+                <div class="cl"></div>
+            </li>
+        </ul>
+        <div class="hr10"></div>
+        <div class="colTit"><span class="tit black">相关文章</span></div>
+        <div class="conNewsList font16">
+            <ul>
+                <li><span class="fr gray">2015-2-14</span><a href="#" target="_blank">[海外实习/工作]
+                        一个camp,大三国内本科如何拿到3个海外工作offer</a></li>
+                <li><span class="fr gray">2015-2-14</span><a href="#" target="_blank">[海外实习/工作] [韩国]三星物产-暑期海外实习生</a>
+                </li>
+                <li><span class="fr gray">2015-2-14</span><a href="#" target="_blank">[海外实习/工作]
+                        参加收费的海外实习项目和自己在国内找实习哪个更有意义</a></li>
+                <li><span class="fr gray">2015-2-14</span><a href="#" target="_blank">[金融]
+                        多伦多大学数理金融本科和人大金融本科申请美国TOP10</a></li>
+                <li><span class="fr gray">2015-2-14</span><a href="#" target="_blank">[海外实习/工作] 如何找海外实习，求教筒子们</a></li>
+                <li><span class="fr gray">2015-2-14</span><a href="#" target="_blank">[职场规则] 【职场规则】如果你的老板爱发飙</a></li>
+                <li><span class="fr gray">2015-2-14</span><a href="#" target="_blank">[金融]
+                        【金融行业现状及金融考研】金融就业与金融考研必听的一场讲座！（录音和文本已传）</a></li>
+                <li><span class="fr gray">2015-2-14</span><a href="#" target="_blank">[职场规则] 【职场规则】职场人要远离的各种“负能量”4</a>
+                </li>
+                <li><span class="fr gray">2015-2-14</span><a href="#" target="_blank">[职场规则]
+                        花花学堂——看流行美剧，学实用英文，看职场规则——The Carrie Diaries （2）</a></li>
+                <li><span class="fr gray">2015-2-14</span><a href="#" target="_blank">[职场规则]
+                        花花学堂——看流行美剧，学实用英文，看职场规则——The Carrie Diaries（1）</a></li>
+            </ul>
+            <div class="cl"></div>
+        </div>-->
+        <div class="hr10"></div>
+        <div class="colTit"><span class="tit black">留学评估表</span></div>
+        <div class="pingguTable" method="post">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td width="32%"><label>昵称</label>
+                        <input type="text" name="textfield" class="input1"></td>
+                    <td width="35%"><label>你的QQ</label>
+                        <input type="text" name="textfield2" id="textfield2" class="input1"></td>
+                    <td width="33%"><label>你的手机</label>
+                        <input type="text" name="textfield3" id="textfield3" class="input1"></td>
+                </tr>
+                <tr>
+                    <td><label for="select">想去的国家</label>
+                        <select name="select" id="select" class="input2" style="width:137px;">
+                            <% cou_co.forEach(function(cou_co, index) { %>
+                            <option><%= cou_co.get('name') %></option>
+                            <% }); %>
+                        </select></td>
+                    <td><label for="select2">想去读的专业</label>
+                        <select name="select2" id="select2" class="input2" style="width:145px;">
+                            <option>商科</option>
+                            <option>商科2</option>
+                            <option>商科3</option>
+                        </select></td>
+                    <td><label for="select3">想去读的课程性质</label>
+                        <select name="select3" id="select3" class="input2" style="width:123px;">
+                            <option>本科</option>
+                            <option>本科2</option>
+                            <option>本科3</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td><label for="select4">目前背景</label>
+                        <select name="select4" id="select4" class="input2" style="width:150px;">
+                            <option>高中在读</option>
+                            <option>高中在读2</option>
+                            <option>高中在读3</option>
+                        </select></td>
+                    <td><label for="select4">想要课程开始时间</label>
+                        <input type="text" name="textfield4" id="textfield4" class="input1"></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td colspan="3">*您的个人信息我们将会隐藏　　
+                        <input type="submit" class="submitBt2" value="立即提交"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="sideR">
+        <div class="colTit"><span class="tit black">我要提问</span></div>
+        <ul class="askBox">
+            <li>
+                <input type="text" class="askInput">
+                <input type="button" class="submitBt" value="提交">
+            </li>
+            <li class="black">输入你的问题，给你想要的答案！</li>
+        </ul>
+        <div class="hrLine"></div>
+        <div class="sideBoxBg">
+            <ul class="infoList">
+                <li class="black">澳洲留学提问</li>
+                <li><a href="#" target="_blank">零中介费申请澳洲留学的流程</a></li>
+                <li><a href="#" target="_blank">为什么55留学网零中介费申请澳洲留学？</a></li>
+                <li><a href="#" target="_blank">澳洲留学一年要多少钱？怎么打工？</a></li>
+                <li><a href="#" target="_blank">清单下载：澳洲留学本硕申请材料清单</a></li>
+                <li><a href="#" target="_blank">如何选到适合我的大学？</a></li>
+                <li><a href="#" target="_blank">整个申请流程需要支付哪些费用？</a></li>
+                <li><a href="#" target="_blank">为什么55留学网零中介费申请澳洲留学？</a></li>
+                <li><a href="#" target="_blank">如何选到适合我的大学？</a></li>
+                <li><a href="#" target="_blank">整个申请流程需要支付哪些费用？</a></li>
+                <li><a href="#" target="_blank">为什么55留学网零中介费申请澳洲留学？</a></li>
+            </ul>
+            <div class="hr10"></div>
+            <div class="hrLine"></div>
+            <div class="guwenBox">
+                <div class="pic black"><a href="#" target="_blank"><img src="/images/temp/pic_3.jpg"/></a>Echo</div>
+                <div class="txt"><a href="#" class="zixunBt">&nbsp;</a>
+
+                    <p>留学顾问Echo，3年澳洲留学经验，擅长澳洲硕士...</p>
+                </div>
+                <div class="cl"></div>
+            </div>
+            <div class="hrLine"></div>
+            <div class="ziliaoList">
+                <ul class="black">
+                    <li>
+                        <div class="pic"><span class="ico"></span><a href="#" target="_blank"><img
+                                        src="/images/temp/pic_4.jpg"/></a></div>
+                        <a href="#" target="_blank">申请资料下载</a></li>
+                    <li>
+                        <div class="pic"><span class="ico"></span><a href="#" target="_blank"><img
+                                        src="/images/temp/pic_4.jpg"/></a></div>
+                        <a href="#" target="_blank">申请资料下载</a></li>
+                    <div class="cl"></div>
+                </ul>
+                <a href="#" class="moreBt white fr">更多资料下载&gt;&gt;</a>
+
+                <div class="hr10"></div>
+            </div>
+        </div>
+        <div class="hr10"></div>
+        <div class="colTit"><span class="tit black">申请必读</span></div>
+        <div class="sideBoxBg">
+            <ul class="infoList">
+                <li><span class="icoA">1</span><a href="#" target="_blank">零中介费申请澳洲留学的流程</a></li>
+                <li><span class="icoA">2</span><a href="#" target="_blank">为什么55留学网零中介费申请澳留学？</a></li>
+                <li><span class="icoA">3</span><a href="#" target="_blank">澳洲留学一年要多少钱？怎么打工？</a></li>
+                <li><span class="icoB">4</span><a href="#" target="_blank">清单下载：澳洲留学本硕申请材料清单</a></li>
+                <li><span class="icoB">5</span><a href="#" target="_blank">如何选到适合我的大学？</a></li>
+                <li><span class="icoB">6</span><a href="#" target="_blank">整个申请流程需要支付哪些费用？</a></li>
+                <li><span class="icoB">7</span><a href="#" target="_blank">为什么55留学网零中介费申请澳留学？</a></li>
+                <li><span class="icoB">8</span><a href="#" target="_blank">如何选到适合我的大学？</a></li>
+                <li><span class="icoB">9</span><a href="#" target="_blank">整个申请流程需要支付哪些费用？</a></li>
+                <li><span class="icoB">10</span><a href="#" target="_blank">为什么55留学网零中介费申请？</a></li>
+            </ul>
+        </div>
+        <div class="hr10"></div>
+        <div class="colTit"><span class="fr gray"><a href="#" target="_blank">查看详情&gt;&gt;</a></span><span
+                    class="tit black">联系我们</span></div>
+        <div class="sideBoxBg">
+            <ul class="sideRcontact">
+                <li>
+                    <div class="fl">地址：</div>
+                    <div class="fr">零中介费申请澳洲留学的流程澳洲留学的</div>
+                    <div class="cl"></div>
+                </li>
+                <li>
+                    <div class="fl">电话：</div>
+                    <div class="fr">45654654654</div>
+                    <div class="cl"></div>
+                </li>
+                <li>
+                    <div class="fl">邮箱：</div>
+                    <div class="fr">56546546@qq.com</div>
+                    <div class="cl"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="sideRpic"><a href="#" target="_blank"><img src="/images/side_weixin.jpg"/></a></div>
+        <div class="sideRpic"><a href="#" target="_blank"><img src="/images/side_rpic.jpg"/></a></div>
+    </div>
+    <div class="cl"></div>
+</div>
+<div id="footer" class="white">Archiver|手机版|小黑屋| 55留学网 ( 京ICP备13011068号-2 )站长统计<br>
+    GMT+8, 2015-4-15 13:45 , Processed in 0.106113 second(s), 13 queries .
+</div>
+<script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+<script>
+
+    var flip = 0;
+    $("#share").click(function () {
+        if (flip++ % 2 == 0) {
+            $(this).removeClass("share1");
+            $(this).addClass("share1Show");
+        }
+        else {
+            $(this).removeClass("share1Show");
+            $(this).addClass("share1");
+        }
+    });
+
+    $('.ar_content').html($('.ar_content').text());
+
+    /*评估信息验证*/
+    /*$(".submitBt2").click(function () {
+        var ar_cu_id = $('.ar_cu_id').text();
+        if (ar_cu_id) {
+
+        }
+        alert(ar_cu_id);
+    });*/
+</script>
+
+</body>
+</html>
+

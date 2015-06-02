@@ -1,0 +1,138 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>列表页</title>
+    <link href="css/55lx_Style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="headerBar">
+    <div id="header"> <a href="index.ht" class="logo">55留学网</a>
+        <div id="navBar" class="black"><a href="#">首页</a><a href="#">澳洲本科/研究生</a><a href="#">英国本科/研究生</a><a href="#">新西兰本科/研究生</a><a href="#">雅思强化</a><a href="#">关于我们</a></div>
+    </div>
+</div>
+<div class="wrap">
+    <div class="tlBar"><a href="#" target="_blank"><img src="images/temp/pic_1.jpg" width="1280" height="160" alt=""/></a></div>
+    <div class="currentBar">
+        <div class="fl">您所在的位置 &gt; <a href="#">首页</a> &gt; <a href="#">澳洲本科/研究生</a></div>
+        <div class="current black"><span>申请必读</span></div>
+    </div>
+    <div class="cl"></div>
+    <div class="contentL">
+        <div class="colTit"><span class="tit black">申请必读</span></div>
+        <div class="articleList">
+            <ul class="list">
+                <% article.forEach(function(article) { %>
+                <li>
+                    <div class="articlePic"><a href="detail/<%=article.id%>" target="_blank"><img src="<%=article.get("title_img")%>" /></a></div>
+                    <div class="articleTxt">
+                        <h2 class="blue"><a href="detail/<%=article.id%>" target="_blank"><%=article.get("title")%></a></h2>
+                        <p class="txt"><%=article.get("content")%></p>
+                        <div class="gray"><span class="fr">时间：<%=article.createdAt%></span>供稿人：<%=article.get("author")%>    点击：24</div>
+                    </div>
+                    <div class="cl"></div>
+                </li>
+                <%});%>
+            </ul>
+            <div class="pages"><a href="#" class="pagePre">返 回</a><a href="#" class="page">1</a><a href="#" class="page">2</a><a href="#" class="pageDq">3</a><a href="#" class="page">4</a><a href="#" class="page">5</a><a href="#" class="page">6</a><a href="#" class="page">7</a><a href="#" class="pageNext">下一页</a></div>
+        </div>
+    </div>
+    <div class="sideR">
+        <div class="colTit"><span class="tit black">我要提问</span></div>
+        <ul class="askBox">
+            <li>
+                <input type="text" class="askInput">
+                <input type="button" class="submitBt" value="提交">
+            </li>
+            <li class="black">输入你的问题，给你想要的答案！</li>
+        </ul>
+        <div class="hrLine"></div>
+        <div class="sideBoxBg">
+            <ul class="infoList">
+                <li class="black">澳洲留学提问</li>
+                <li><a href="#" target="_blank">零中介费申请澳洲留学的流程</a></li>
+                <li><a href="#" target="_blank">为什么55留学网零中介费申请澳洲留学？</a></li>
+                <li><a href="#" target="_blank">澳洲留学一年要多少钱？怎么打工？</a></li>
+                <li><a href="#" target="_blank">清单下载：澳洲留学本硕申请材料清单</a></li>
+                <li><a href="#" target="_blank">如何选到适合我的大学？</a></li>
+                <li><a href="#" target="_blank">整个申请流程需要支付哪些费用？</a></li>
+                <li><a href="#" target="_blank">为什么55留学网零中介费申请澳洲留学？</a></li>
+                <li><a href="#" target="_blank">如何选到适合我的大学？</a></li>
+                <li><a href="#" target="_blank">整个申请流程需要支付哪些费用？</a></li>
+                <li><a href="#" target="_blank">为什么55留学网零中介费申请澳洲留学？</a></li>
+            </ul>
+            <div class="hr10"></div>
+            <div class="hrLine"></div>
+            <div class="guwenBox">
+                <div class="pic black"><a href="#" target="_blank"><img src="images/temp/pic_3.jpg" /></a>Echo</div>
+                <div class="txt"><a href="#" class="zixunBt">&nbsp;</a>
+                    <p>留学顾问Echo，3年澳洲留学经验，擅长澳洲硕士...</p>
+                </div>
+                <div class="cl"></div>
+            </div>
+            <div class="hrLine"></div>
+            <div class="ziliaoList">
+                <ul class="black">
+                    <li>
+                        <div class="pic"><span class="ico"></span><a href="#" target="_blank"><img src="images/temp/pic_4.jpg" /></a></div>
+                        <a href="#" target="_blank">申请资料下载</a></li>
+                    <li>
+                        <div class="pic"><span class="ico"></span><a href="#" target="_blank"><img src="images/temp/pic_4.jpg" /></a></div>
+                        <a href="#" target="_blank">申请资料下载</a></li>
+                    <div class="cl"></div>
+                </ul>
+                <a href="#" class="moreBt white fr">更多资料下载&gt;&gt;</a>
+                <div class="hr10"></div>
+            </div>
+        </div>
+        <div class="hr10"></div>
+        <div class="colTit"><span class="tit black">申请必读</span></div>
+        <div class="sideBoxBg">
+            <ul class="infoList">
+                <li><span class="icoA">1</span><a href="#" target="_blank">零中介费申请澳洲留学的流程</a></li>
+                <li><span class="icoA">2</span><a href="#" target="_blank">为什么55留学网零中介费申请澳留学？</a></li>
+                <li><span class="icoA">3</span><a href="#" target="_blank">澳洲留学一年要多少钱？怎么打工？</a></li>
+                <li><span class="icoB">4</span><a href="#" target="_blank">清单下载：澳洲留学本硕申请材料清单</a></li>
+                <li><span class="icoB">5</span><a href="#" target="_blank">如何选到适合我的大学？</a></li>
+                <li><span class="icoB">6</span><a href="#" target="_blank">整个申请流程需要支付哪些费用？</a></li>
+                <li><span class="icoB">7</span><a href="#" target="_blank">为什么55留学网零中介费申请澳留学？</a></li>
+                <li><span class="icoB">8</span><a href="#" target="_blank">如何选到适合我的大学？</a></li>
+                <li><span class="icoB">9</span><a href="#" target="_blank">整个申请流程需要支付哪些费用？</a></li>
+                <li><span class="icoB">10</span><a href="#" target="_blank">为什么55留学网零中介费申请？</a></li>
+            </ul>
+        </div>
+        <div class="hr10"></div>
+        <div class="colTit"><span class="fr gray">查看详情&gt;&gt;</span><span class="tit black">联系我们</span></div>
+        <div class="sideBoxBg">
+            <ul class="sideRcontact">
+                <li>
+                    <div class="fl">地址：</div>
+                    <div class="fr">零中介费申请澳洲留学的流程澳洲留学的</div>
+                    <div class="cl"></div>
+                </li>
+                <li>
+                    <div class="fl">电话：</div>
+                    <div class="fr">45654654654</div>
+                    <div class="cl"></div>
+                </li>
+                <li>
+                    <div class="fl">邮箱：</div>
+                    <div class="fr">56546546@qq.com</div>
+                    <div class="cl"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="sideRpic"><a href="#" target="_blank"><img src="images/side_weixin.jpg" /></a></div>
+        <div class="sideRpic"><a href="#" target="_blank"><img src="images/side_rpic.jpg" /></a></div>
+    </div>
+    <div class="cl"></div>
+</div>
+<div id="footer" class="white">Archiver|手机版|小黑屋| 55留学网 ( 京ICP备13011068号-2 )站长统计<br>
+    GMT+8, 2015-4-15 13:45 , Processed in 0.106113 second(s), 13 queries .</div>
+</body>
+<script src="/js/index.js"></script>
+<script src="/js/moment-with-locales.min.js"></script>
+<script src="/cloud/app.js"></script>
+</html>
